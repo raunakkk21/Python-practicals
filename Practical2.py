@@ -38,7 +38,7 @@ b=int(input('Enter the number upto which you want to print prime numberes:'))
 
 
 for number in range(a, b+1):
-   if (number>2):
+   if (number>1):
          for i in range(2,number):
           if (number%i==0):
             break
