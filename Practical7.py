@@ -1,15 +1,16 @@
 #Function that accepts two strings and returns the indices of all occurences of second stirng in the first string as a list
-str1= "Hello means, hey Hello"
- 
-str2 = "Hello"
- 
-print("The original string is : ", str1)
 
-print("The substring to find : " , str2)
- 
+def fdiff(str1, str2):
+    
+    if str1 == str2:
+        return -1
+    else:
+        for str1, str2 in zip(str1, str2):
+            if str1 != str2:
+                return str1
 
-res = [i for i in range(len(str1)) if str1.startswith(str2, i)]
- 
 
-print("The start indices of the substrings are : " + str(res))
+string1 = input("Enter first string:")
+string2 = input("Enter second string:")
+print(fdiff(string1, string2))
     
